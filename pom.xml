@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>au.org.emii.portal</groupId>
-    <artifactId>aodn-portal</artifactId>
+    <artifactId>travis-test</artifactId>
     <packaging>grails-app</packaging>
     <version>4.12.1</version>
 
-    <name>aodn-portal</name>
-    <description>aodn-portal</description>
+    <name>travis-test</name>
+    <description>travis-test</description>
 
     <properties>
         <grails.version>2.4.4</grails.version>
@@ -278,72 +278,6 @@
                 <extensions>true</extensions>
             </plugin>
 
-            <plugin>
-                <groupId>com.github.searls</groupId>
-                <artifactId>jasmine-maven-plugin</artifactId>
-                <version>1.3.1.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <jsSrcDir>${project.basedir}/web-app/js</jsSrcDir>
-                    <sourceIncludes>
-                        <include>jquery/jquery-1.6.min.js</include>
-                        <include>jquery/jquery-autocomplete1.1.js</include>
-                        <include>jquery/jquery.fileDownload.js</include>
-                        <include>jquery/jquery.rotate.1-1.js</include>
-                        <include>jquery/jquery.cookie.js</include>
-                        <include>ext-3.3.1/adapter/ext/ext-base-debug.js</include>
-                        <include>ext-3.3.1/ext-all-debug-w-comments.js</include>
-                        <include>js/portal/common/GeoExt.ux.BaseLayerCombobox.js</include>
-                        <include>OpenLayers-2.13.1/OpenLayers.js</include>
-                        <include>OpenLayers-2.13.1/lib/deprecated.js</include>
-                        <include>GeoExt1.1/script/GeoExt.js</include>
-                        <include>ext-ux/**/*.js</include>
-                        <include>log4javascript-1.4.6/log4javascript_uncompressed.js</include>
-                        <include>portal/WKTNormalised.js</include>
-                        <include>portal/prototypes/OpenLayers.js</include>
-                        <include>portal/ui/openlayers/control/SpatialConstraint.js</include>
-                        <include>portal/lang/en.js</include>
-                        <include>portal/utils/Logging.js</include>
-                        <include>portal/search/field/CheckBox.js</include>
-                        <include>portal/search/field/ValueCheckBox.js</include>
-                        <include>portal/search/field/MapLayersCheckBox.js</include>
-                        <include>portal/common/MapPanel.js</include>
-                        <include>portal/search/CloneMapPanel.js</include>
-                        <!-- needs to load before FacetMapPanel-->
-                        <include>portal/ui/openlayers/layer/NcWMS.js</include>
-                        <include>portal/data/ChildElementsField.js</include>
-                        <include>portal/data/Metadata*.js</include>
-                        <include>portal/ui/MapPanel.js</include>
-                        <include>portal/search/SearchFiltersPanel.js</include>
-                        <include>portal/search/HierarchicalSearchFiltersPanel.js</include>
-                        <include>portal/SearchPanel.js</include>
-                        <include>portal/ui/VisualisePanel.js</include>
-                        <include>portal/ui/MainPanel.js</include>
-                        <include>portal/utils/moment.min.js</include>
-                        <include>portal/utils/Proxy.js</include>
-                        <include>portal/cart/DownloadHandler.js</include>
-                        <include>portal/filter/Filter.js</include>
-                        <include>portal/filter/combiner/BaseFilterCombiner.js</include>
-                        <include>portal/filter/combiner/FilterCqlBuilder.js</include>
-                        <include>portal/**/*.js</include>
-                    </sourceIncludes>
-                    <sourceExcludes>
-                        <exclude>portal/portal.js</exclude>
-                    </sourceExcludes>
-                    <specIncludes>
-                        <include>jasmine-slow.js</include>
-                        <include>spec_helper.js</include>
-                        <include>portal/search/SearchSpecHelper.js</include>
-                        <include>**/*.js</include>
-                    </specIncludes>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
