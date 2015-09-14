@@ -21,4 +21,4 @@ before_install:
 
   
 script:
-  - "grails clean && grails upgrade --non-interactive && grails test-app functional: --non-interactive --stacktrace"
+  - "grails clean && grails test-app functional: --non-interactive --stacktrace"
