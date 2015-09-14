@@ -21,5 +21,4 @@ before_install:
 
   
 script:
-  # - mvn test
-  - "grails clean && grails upgrade --non-interactive && grails test-app functional: SmokeSpec --non-interactive --stacktrace"
+  - "grails clean && grails upgrade --non-interactive && grails test-app functional: --non-interactive --stacktrace"
